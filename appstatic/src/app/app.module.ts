@@ -8,10 +8,12 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { FooterComponent } from './shared-components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
