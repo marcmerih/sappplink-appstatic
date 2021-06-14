@@ -9,6 +9,8 @@ import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FooterComponent } from './shared-components/footer/footer.component';
+import { HomePageComponent } from './modules/home-page/home-page/home-page.component';
+import { HomePageModule } from './modules/home-page/home-page.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FooterComponent } from './shared-components/footer/footer.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    HomePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
