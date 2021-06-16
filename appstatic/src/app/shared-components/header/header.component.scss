@@ -1,11 +1,10 @@
 .header {
     z-index: 2;
-    background-color: black;
     height: 130px;
     position: absolute;
     padding-left: 10%;
     padding-top: 25px;
-    min-width: 800px;
+    min-width: 1000px !important;
 
     .logo {
         width: 60px;
@@ -13,8 +12,43 @@
         margin-top: -30px;
     }
 
+    .unordered-list {
+        margin-left: 40%;
+    }
+
     span {
         padding-left: 20px;
         margin-top: 25px;
+    }
+
+    nav ul {
+        float: left;
+        margin-top: -55px;
+    }
+
+    nav ul li {
+        float: left;
+        list-style: none;
+        position: relative;
+        padding-top: 10px;
+        margin-left: 80px;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        padding: 0px;
+        margin-top: -2px;
+        margin-left: -80px;
     }
 }
