@@ -4,4 +4,18 @@
     background-color: $gray-primary;
     min-width: 1450px;
     z-index: 1;
+
+    .main-title {
+        position: absolute;
+        font-family: Lato;
+        width: 100%;
+        font-weight: 700;
+        font-size: 60px;
+        color: white;
+        text-align: right;
+        margin-top: 300px;
+        word-break: none;
+        margin-left: -9%;
+        min-width: 1060px;
+    }
 }
