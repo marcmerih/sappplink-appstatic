@@ -1,7 +1,7 @@
-<div class="col-md-12 header">
+<div [class]="navBarFixed ? 'col-md-12 header-fixed' : 'col-md-12 header'">
     <img src="assets/logo@2x.png" class="logo">
     <span class="title">Sapplink</span>
-    <nav>
+    <nav (scroll)="onScroll()">
         <ul class="unordered-list">
             <li><a>Home</a></li>
             <li><a>Corporate</a>

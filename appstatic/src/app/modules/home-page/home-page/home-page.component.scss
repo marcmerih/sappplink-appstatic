@@ -1,21 +1,31 @@
 @import '../../../../styles.scss';
 
-.background-image {
+.background-image, .background-image-2 {
     background-color: $gray-primary;
     min-width: 1440px;
     z-index: 1;
 
-    .main-title {
+    .main-title, .services-title {
         position: absolute;
         font-family: Lato;
         width: 100%;
+        height: 100vh;
         font-weight: 700;
         font-size: 60px;
         color: white;
         text-align: right;
-        margin-top: 300px;
+        margin-top: 380px;
         word-break: none;
         margin-left: -9%;
         min-width: 1060px;
+    }
+
+    .background-image-2 {
+        text-align: center !important;
+
+        .services-title {
+            text-align: center;
+            margin-left: 0;
+        }
     }
 }

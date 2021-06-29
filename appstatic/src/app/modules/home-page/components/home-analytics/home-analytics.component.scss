@@ -2,17 +2,19 @@
 
 .analytics {
     height: 400px;
-    background-color: white;
-    padding-left: 10%;
+    width: auto;
     padding-top: 85px;
     text-align: center;
+    margin-left: 80px;
 
     .details {
         display: flex;
+        text-align: center;
         justify-content: center;
+        background-color: white;
 
         & > app-analytic-detail {
-            padding: 75px;
+            padding: 85px;
         }
     }
 
