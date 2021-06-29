@@ -1,7 +1,6 @@
 
 .item {
     text-align: center;
-    ::-ms-tooltip
 
     .icon {
         display: block;
@@ -19,5 +18,32 @@
         font-weight: 300;
         text-transform: uppercase;
         font-size: 13px;
+    }
+}
+
+.item-service {
+    text-align: center;
+    width: 300px;
+
+    .icon-service {
+        display: block;
+        margin: auto;
+        height: 90px;
+        width: auto;
+    }
+    
+    .title-service {
+        color: white;
+        font-family: Open Sans;
+        font-weight: 300;
+        font-size: 35px;
+    }
+    
+    .subtitle-service {
+        font-family: Open Sans;
+        font-weight: 300;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
     }
 }

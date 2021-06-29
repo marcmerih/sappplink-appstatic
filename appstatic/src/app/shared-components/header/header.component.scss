@@ -4,7 +4,8 @@
     position: absolute;
     padding-left: 10%;
     padding-top: 85px;
-    min-width: 1000px !important;
+    min-width: 1170px !important;
+    transition: 0.9s linear background-color;
 
     .logo {
         width: 60px;
@@ -74,6 +75,7 @@
     padding-top: 5px;
     min-width: 1000px !important;
     transition: 0.5s linear background-color;
+    min-width: 1170px !important;
 
     .logo {
         width: 60px;

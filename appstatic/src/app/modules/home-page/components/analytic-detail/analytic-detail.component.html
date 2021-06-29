@@ -1,7 +1,15 @@
-<div class="col-md-12 item" *ngIf="title && subtitle && icon">
+<div class="col-md-12 item" *ngIf="title && subtitle && icon && !isServices">
     <img [src]="icon" class="icon">
     <br>
     <span class="title">{{ title }}</span>
     <br>
     <span class="subtitle">{{ subtitle }}</span>
+</div>
+
+<div class="col-md-12 item-service" *ngIf="title && subtitle && icon && isServices">
+    <img [src]="icon" class="icon-service">
+    <br>
+    <span class="title-service">{{ title }}</span>
+    <hr style="color: white">
+    <span class="subtitle-service">{{ subtitle }}</span>
 </div>

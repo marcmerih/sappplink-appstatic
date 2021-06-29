@@ -1,15 +1,14 @@
 @import '../../../../styles.scss';
 
-.background-image, .background-image-2 {
+.background-image {
     background-color: $gray-primary;
     min-width: 1440px;
     z-index: 1;
 
-    .main-title, .services-title {
+    .main-title {
         position: absolute;
         font-family: Lato;
         width: 100%;
-        height: 100vh;
         font-weight: 700;
         font-size: 60px;
         color: white;
@@ -17,15 +16,29 @@
         margin-top: 380px;
         word-break: none;
         margin-left: -9%;
+        min-width: 760px;
+    }
+}
+.background-image-2 {
+    background-color: $gray-primary;
+    min-width: 1440px;
+    z-index: 1;
+    text-align: center;
+    
+    .services-title {
+        position: absolute;
+        font-family: Lato;
+        width: 100%;
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+        margin-top: 60px;
+        word-break: none;
         min-width: 1060px;
     }
-
-    .background-image-2 {
-        text-align: center !important;
-
-        .services-title {
-            text-align: center;
-            margin-left: 0;
-        }
-    }
+}
+.services-provided {
+    position: absolute;
+    width: 100vw;
+    min-width: 1100px;
 }

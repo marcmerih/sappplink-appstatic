@@ -9,6 +9,7 @@ export class AnalyticDetailComponent implements OnInit {
   @Input() title: string | undefined;
   @Input() subtitle: string | undefined;
   @Input() icon: string | undefined;
+  @Input() isServices: boolean = false;
 
   constructor() { }
 
