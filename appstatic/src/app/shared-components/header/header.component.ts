@@ -26,7 +26,6 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateToHome(): void {
-    
     this.navigationService.routeTo('home');
   }
 }
