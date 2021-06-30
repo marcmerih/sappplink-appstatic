@@ -71,8 +71,9 @@
 
 .bottom-container {
     background-color: $gray-primary;
-    height: 35px;
+    height: 55px;
     width: 100vw;
+    min-width: 610px;
 
     .designed {
         color: white;
@@ -89,5 +90,6 @@
         font-size: 13px;
         float: right;
         margin-right: 215px;
+        margin-top: 5px;
     }
 }
