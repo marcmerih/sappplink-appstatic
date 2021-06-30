@@ -1,10 +1,11 @@
 export interface NewsItem {
-    backgroundImg: string;
+    uid?: string;
+    backgroundImg?: string;
     pageImg?: string;
-    title: string;
-    isNews: boolean;
-    date: string | null;
-    numberOfViews: number;
+    title?: string;
+    isNews?: boolean;
+    date?: string | null;
+    numberOfViews?: number;
     content?: string;
     author?: string;
 }

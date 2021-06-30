@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { NewsItem } from '../../models/news';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-news-item',
@@ -8,6 +9,7 @@ import { NewsItem } from '../../models/news';
 })
 export class NewsItemComponent implements OnInit {
   @Input() item: NewsItem | undefined;
+  @Output() openItem = new EventEmitter<NewsItem>();
   constructor() { }
 
   ngOnInit(): void {
@@ -18,7 +20,12 @@ export class NewsItemComponent implements OnInit {
   }
 
   get itemTitle() {
-    return this.item?.title;
+    if (this.item?.title && this.item?.title.length > 81) {
+      return (this.item?.title.slice(0,81) + '...')
+    } else if (this.item?.title && this.item?.title.length <= 81) {
+      return this.item?.title;
+    }
+    return '';
   }
 
   get itemViews() {

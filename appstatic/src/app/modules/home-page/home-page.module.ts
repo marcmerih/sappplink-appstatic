@@ -7,6 +7,8 @@ import { AnalyticDetailComponent } from './components/analytic-detail/analytic-d
 import { ServicesProvidedComponent } from './components/services-provided/services-provided.component';
 import { NewsComponent } from './components/news/news.component';
 import { NewsItemComponent } from './components/news-item/news-item.component';
+import { JoinTeamComponent } from './components/join-team/join-team.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,13 @@ import { NewsItemComponent } from './components/news-item/news-item.component';
     AnalyticDetailComponent,
     ServicesProvidedComponent,
     NewsComponent,
-    NewsItemComponent
+    NewsItemComponent,
+    JoinTeamComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     HomePageComponent,

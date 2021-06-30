@@ -1,0 +1,19 @@
+.container {
+    margin-top: 250px;
+}
+
+.text-field {
+    margin-top: 35px;
+    &.primary {
+        width: 415px !important;
+    }
+
+    &.secondary {
+        width: 200px;
+    }
+}
+
+.submit {
+    margin-left: -15px;
+    margin-top: 25px;
+}

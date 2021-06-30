@@ -2,7 +2,9 @@
 
 // Global Variables
 
-$gray-primary: #222222;
+$gray-primary: #1E1E1E;
+$orange: #E25E0C;
+
 
 .title {
     font-family: Lato;
@@ -18,4 +20,94 @@ $gray-primary: #222222;
 body {
     overflow-x: hidden;
     max-width: 1328px;
+}
+
+.primary-button {
+    width: 415px;
+    height: 54px;
+    background-color: $orange;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s linear;
+    color: white;
+}
+
+.primary-button:hover {
+    width: 415px;
+    height: 54px;
+    color: $orange;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid $orange;
+    border-radius: 8px;
+    transition: 0.2s linear;
+}
+
+.text-field {
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    outline: none;
+    color: white;
+    font-family: Open Sans;
+    font-weight: 300;
+    padding: 5px;
+    padding-left: 13px;
+    transition: 0.2s linear;
+    margin-right: 15px;
+}
+
+.text-field:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $orange;
+    background: none;
+    color: $orange;
+    font-family: Open Sans;
+    font-weight: 300;
+    transition: 0.2s linear;
+}
+
+.text-field::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-family: Open Sans;
+    font-weight: 300;
+    transition: 0.2s linear;
+}
+
+.text-field:focus::placeholder {
+    color: $orange;
+    opacity: 0.5;
+    font-family: Open Sans;
+    font-weight: 300;
+    transition: 0.2s linear;
+}
+
+.text-field:-webkit-autofill {
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    outline: none;
+    color: white;
+    font-family: Open Sans;
+    font-weight: 300;
+    padding: 5px;
+    padding-left: 13px;
+    transition: 0.2s linear;
+    margin-right: 15px;
+}
+.text-field:-webkit-autofill:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $orange;
+    background: none;
+    color: $orange;
+    font-family: Open Sans;
+    font-weight: 300;
+    transition: 0.2s linear;
+}
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: $gray-primary !important;
+ -webkit-box-shadow: 0 0 0 30px white inset !important;
 }

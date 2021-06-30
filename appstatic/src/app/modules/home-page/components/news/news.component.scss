@@ -30,11 +30,18 @@
         background-color: #1E1E1E;
         border-radius: 15px;
         color: white;
-        vertical-align: middle;
+        cursor: pointer;
+        transition: 0.2s linear;
 
         .text {
-            vertical-align: middle;
-            margin-top: 150px;
+            margin-top: 160px;    
         }
+    }
+
+    .show-more:hover {
+        background-color: white;
+        border: 1px solid #1E1E1E;
+        color: #1E1E1E;
+        transition: 0.2s linear;
     }
 }

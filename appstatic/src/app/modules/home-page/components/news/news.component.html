@@ -1,9 +1,12 @@
 <div class="col-md-12 container">
-    <div #items *ngFor="let item of news">
+    <div #items *ngFor="let item of newsList">
         <app-news-item [item]="item"
+            (openItem)="openItem($event)"
         ></app-news-item>
     </div>
     <div class="show-more">
-        <span class="text">Show More</span>
+        <div class="text">
+            <span>Show More</span>
+        </div>
     </div>
 </div>

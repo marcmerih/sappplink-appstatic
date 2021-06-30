@@ -1,5 +1,5 @@
 .header {
-    z-index: 2;
+    z-index: 200;
     height: 130px;
     position: absolute;
     padding-left: 10%;
@@ -67,7 +67,7 @@
 }
 
 .header-fixed {
-    z-index: 2;
+    z-index: 200;
     height: 90px;
     position: fixed;
     background-color: #1E1E1E;

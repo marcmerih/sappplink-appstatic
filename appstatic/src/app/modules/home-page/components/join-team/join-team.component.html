@@ -1,0 +1,28 @@
+<div class="col-md-12 container" [formGroup]="formGroup">
+    <div style="padding: 15px;">
+        <input type="text" class="text-field secondary" placeholder="First Name" formControlName="firstName">
+        <input type="text" class="text-field secondary" placeholder="Last Name" formControlName="lastName">
+        <br>
+        <input type="text" class="text-field primary" placeholder="Email address" formControlName="email">
+        <br>
+        <select name="countries" id="countries" class="text-field primary" placeholder="Service area" formControlName="country">
+            <!-- To be retrieved from firebase... For now: hardcoded -->
+            <option value="select" selected>Select</option>
+            <option value="canada">Canada</option>
+            <option value="us">USA</option>
+        </select>
+        <br>
+        <select *ngIf="isCountrySelected"
+            name="countries" 
+            id="countries" 
+            class="text-field primary" 
+            placeholder="Service area" 
+            formControlName="state">
+            <!-- To be retrieved from firebase... For now: hardcoded -->
+                <option value="canada">Canada</option>
+                <option value="us">USA</option>
+        </select>
+    </div>
+    <br>
+    <button class="primary-button submit">Join Our Growing Team</button>
+</div>

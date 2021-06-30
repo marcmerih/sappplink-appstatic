@@ -9,8 +9,8 @@ import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FooterComponent } from './shared-components/footer/footer.component';
-import { HomePageComponent } from './modules/home-page/home-page/home-page.component';
 import { HomePageModule } from './modules/home-page/home-page.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,9 @@ import { HomePageModule } from './modules/home-page/home-page.module';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFireStorageModule,
-    HomePageModule
+    HomePageModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
