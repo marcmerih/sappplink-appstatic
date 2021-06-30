@@ -1,3 +1,5 @@
+@import '../../../../../styles.scss';
+
 .container {
     width: 350px;
     height: 350px;
@@ -13,7 +15,7 @@
     .gradient {
         height: 350px;
         width: 350px;
-        background: linear-gradient(rgba(155, 155, 155, 0), black);
+        background: linear-gradient(rgba(155, 155, 155, 0), $gray-primary);
         border-radius: 15px;
         opacity: 1;
         transition: 0.2s linear opacity;
@@ -23,7 +25,7 @@
     .gradient:hover {
         height: 350px;
         width: 350px;
-        background: linear-gradient(rgba(155, 155, 155, 0), black);
+        background: linear-gradient(rgba(155, 155, 155, 0), $gray-primary);
         opacity: 0.8;
         transition: 0.2s linear opacity;
         border-radius: 15px;

@@ -1,3 +1,5 @@
+@import '../../../../../styles.scss';
+
 .container {
     text-align: center;
     height: 400px;
@@ -13,7 +15,7 @@
         width: 100%;
         font-weight: 700;
         font-size: 40px;
-        color: black;
+        color: $gray-primary;
         word-break: none;
         min-width: 1060px;
     }
@@ -27,7 +29,7 @@
         height: 350px;
         text-align: center;
         margin-top: 60px;
-        background-color: #1E1E1E;
+        background-color: $gray-primary;
         border-radius: 15px;
         color: white;
         cursor: pointer;
@@ -40,8 +42,8 @@
 
     .show-more:hover {
         background-color: white;
-        border: 1px solid #1E1E1E;
-        color: #1E1E1E;
+        border: 1px solid $gray-primary;
+        color: $gray-primary;
         transition: 0.2s linear;
     }
 }
