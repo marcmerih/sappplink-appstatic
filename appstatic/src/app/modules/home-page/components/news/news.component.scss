@@ -1,5 +1,8 @@
 .container {
     text-align: center;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
 
     .title {
         position: absolute;
@@ -11,4 +14,8 @@
         word-break: none;
         min-width: 1060px;
     }
+}
+
+> app-news-item {
+    padding: 15px;
 }

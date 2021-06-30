@@ -40,22 +40,18 @@
 .news-container {
     text-align: center;
 
-    .news-title {
-        position: absolute;
-        font-family: Lato;
-        width: 100%;
-        font-weight: 700;
-        font-size: 40px;
-        color: black;
-        // margin-top: 60px;
-        word-break: none;
-        min-width: 1060px;
-    }
-
     .news {
-        position: absolute;
         width: 100vw;
         min-width: 1100px;
+        margin-top: 60px;
+
+        .news-title {
+            font-family: Lato;
+            width: 100vw;
+            font-weight: 700;
+            font-size: 40px;
+            min-width: 1060px;
+        }
     }
 }
 

@@ -18,19 +18,18 @@ export class NewsItemComponent implements OnInit {
   }
 
   get itemTitle() {
-    return this.item?.title
+    return this.item?.title;
   }
 
   get itemViews() {
-    return this.item?.numberOfViews
+    return this.item?.numberOfViews;
   }
 
   get itemNews() {
-    return this.item?.isNews
+    return this.item?.isNews;
   }
 
   get itemDate() {
-    return this.item?.date
+    return this.item?.date;
   }
-
 }

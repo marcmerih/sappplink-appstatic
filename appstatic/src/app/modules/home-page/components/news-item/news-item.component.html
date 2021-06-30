@@ -1,4 +1,10 @@
 <div class="col-md-12 container">
     <span class="title">{{ itemTitle }}</span>
+    <span class="material-icons article" *ngIf="itemNews">&#xEf42;</span>
+    <span class="material-icons article" *ngIf="!itemNews">&#xe8cd;</span>
+    <span class="material-icons views">&#xe8f4;</span>
+    <span class="numberOfViews">{{ itemViews }}</span>
+    <span class="date">{{ itemDate }}</span>
+    <div class="gradient"></div>
     <img [src]="itemBackground">
 </div>

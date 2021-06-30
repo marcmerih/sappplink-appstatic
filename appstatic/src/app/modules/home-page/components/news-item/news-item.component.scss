@@ -1,17 +1,66 @@
 .container {
     width: 350px;
     height: 350px;
+    text-align: left;
+    margin-top: 60px;
 
     img {
         width: 350px;
         height: 350px;
     }
+
+    .gradient {
+        height: 350px;
+        width: 350px;
+        background: linear-gradient(rgba(155, 155, 155, 0), black);
+        border-radius: 15px;
+        position: absolute;
+    }
         
     .title {
         position: absolute;
+        padding: 15px;
         font-family: Lato;
-        font-size: 16px;
+        font-size: 20px;
         color: white;
-        word-wrap: break-word;
+        width: 350px;
+        white-space: normal;
+        margin-top: 180px;
+        z-index: 9;
+    }
+
+    .article {
+        color: white;
+        position: absolute;
+        margin-top: 300px;
+        padding: 15px;
+        z-index: 10;
+    }
+
+    .views {
+        color: white;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 35px;
+        padding: 15px;
+        z-index: 10;
+    }
+
+    .numberOfViews {
+        color: white;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 65px;
+        padding: 15px;
+        z-index: 10;
+    }
+
+    .date {
+        color: white;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 220px;
+        padding: 15px;
+        z-index: 10;
     }
 }

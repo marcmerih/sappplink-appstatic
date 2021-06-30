@@ -21,6 +21,15 @@ export class NewsComponent implements OnInit {
       numberOfViews: 12
     }
     this.news.push(mockNewsItem);
+
+    const mockNewsItem2: NewsItem = {
+      backgroundImg: 'assets/iphone-news@2x.png',
+      title: 'Best Practices for Programming in an Enterprise Application Setting…',
+      isNews: false,
+      date: this.date.transform(myDate, 'yyyy-MM-dd'),
+      numberOfViews: 128
+    }
+    this.news.push(mockNewsItem2);
   }
 
   ngOnInit(): void {
