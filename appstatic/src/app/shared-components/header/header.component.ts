@@ -16,8 +16,17 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private navigationService: NavigationService) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToCorporate(): void {
+    this.navigationService.routeTo('about');
+  }
+
+  navigateToHome(): void {
+    
+    this.navigationService.routeTo('home');
   }
 }

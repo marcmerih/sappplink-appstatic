@@ -11,6 +11,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FooterComponent } from './shared-components/footer/footer.component';
 import { HomePageModule } from './modules/home-page/home-page.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CorporateModule } from './modules/corporate/corporate.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     AngularFireStorageModule,
     HomePageModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    CorporateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
