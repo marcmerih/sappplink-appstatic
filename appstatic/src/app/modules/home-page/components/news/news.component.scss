@@ -1,0 +1,14 @@
+.container {
+    text-align: center;
+
+    .title {
+        position: absolute;
+        font-family: Lato;
+        width: 100%;
+        font-weight: 700;
+        font-size: 40px;
+        color: black;
+        word-break: none;
+        min-width: 1060px;
+    }
+}

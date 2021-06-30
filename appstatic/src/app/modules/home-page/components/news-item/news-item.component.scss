@@ -1,0 +1,17 @@
+.container {
+    width: 350px;
+    height: 350px;
+
+    img {
+        width: 350px;
+        height: 350px;
+    }
+        
+    .title {
+        position: absolute;
+        font-family: Lato;
+        font-size: 16px;
+        color: white;
+        word-wrap: break-word;
+    }
+}

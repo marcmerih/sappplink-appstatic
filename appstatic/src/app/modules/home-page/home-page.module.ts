@@ -5,6 +5,8 @@ import { HeaderComponent } from 'src/app/shared-components/header/header.compone
 import { HomeAnalyticsComponent } from './components/home-analytics/home-analytics.component';
 import { AnalyticDetailComponent } from './components/analytic-detail/analytic-detail.component';
 import { ServicesProvidedComponent } from './components/services-provided/services-provided.component';
+import { NewsComponent } from './components/news/news.component';
+import { NewsItemComponent } from './components/news-item/news-item.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { ServicesProvidedComponent } from './components/services-provided/servic
     HeaderComponent,
     HomeAnalyticsComponent,
     AnalyticDetailComponent,
-    ServicesProvidedComponent
+    ServicesProvidedComponent,
+    NewsComponent,
+    NewsItemComponent
   ],
   imports: [
     CommonModule
