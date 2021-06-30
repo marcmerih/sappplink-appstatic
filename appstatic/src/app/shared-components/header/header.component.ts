@@ -28,4 +28,18 @@ export class HeaderComponent implements OnInit {
   navigateToHome(): void {
     this.navigationService.routeTo('home');
   }
+
+  isActive(url: string): string {
+    console.log(this.navigationService.currentUrl);
+    return (this.isActiveUrl(url)) ? 'active' : ''; 
+  }
+
+  isActiveUrl(url: string): boolean {
+    return this.navigationService.currentUrl === url;
+  }
+
+  get isCorporateActive() {
+    return (this.isActiveUrl('/about') || this.isActiveUrl('/management') || this.isActiveUrl('/history') ||
+      this.isActiveUrl('/goals') || this.isActiveUrl('/initiatives'));
+  }
 }

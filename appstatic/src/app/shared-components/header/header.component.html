@@ -3,10 +3,10 @@
     <span class="title">Sapplink</span>
     <nav (scroll)="onScroll()">
         <ul class="unordered-list">
-            <li><a (click)="navigateToHome()">Home</a></li>
+            <li [class]="isActive('/home')"><a (click)="navigateToHome()">Home</a></li>
             <li><a (click)="navigateToCorporate()">Corporate</a>
                 <ul>
-                    <li><a (click)="navigateToCorporate()">About Us</a></li>
+                    <li [class]="isActive('/about')"><a (click)="navigateToCorporate()">About Us</a></li>
                     <li><a>Management</a></li>
                     <li><a>History</a></li>
                     <li><a>Org. Goals</a></li>
