@@ -3,6 +3,9 @@
     height: 400px;
     margin-top: 20px;
     display: flex;
+    justify-content: space-evenly;
+
+    // TODO: Make the news stack upon resizing the window, ie css grid
 
     .title {
         position: absolute;
@@ -14,8 +17,24 @@
         word-break: none;
         min-width: 1060px;
     }
-}
+    
+    #items > * {
+        padding-right: 15px;
+    }
 
-> app-news-item {
-    padding: 15px;
+    .show-more {
+        width: 350px;
+        height: 350px;
+        text-align: center;
+        margin-top: 60px;
+        background-color: #1E1E1E;
+        border-radius: 15px;
+        color: white;
+        vertical-align: middle;
+
+        .text {
+            vertical-align: middle;
+            margin-top: 150px;
+        }
+    }
 }

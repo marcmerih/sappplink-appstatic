@@ -1,6 +1,9 @@
 <div class="col-md-12 container">
-    <div *ngFor="let item of news" #newsItems>
+    <div #items *ngFor="let item of news">
         <app-news-item [item]="item"
         ></app-news-item>
+    </div>
+    <div class="show-more">
+        <span class="text">Show More</span>
     </div>
 </div>
