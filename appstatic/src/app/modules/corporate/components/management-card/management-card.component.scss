@@ -1,0 +1,36 @@
+@import '../../../../../styles.scss';
+
+.card {
+    border: none;
+    text-align: center;
+    width: auto;
+
+    .image {
+        border: 3px solid $orange;
+        border-radius: 100%;
+        height: 250px;
+        width: 250px;
+    }
+
+    .title {
+        font-family: Lato;
+        font-size: 40px;
+        font-weight: 700;
+        color: $gray-primary;
+        margin-top: 15px;
+    }
+
+    .subtitle {
+        font-family: Open Sans;
+        font-size: 19px;
+        font-weight: 300;
+        color: $gray-primary;
+    }
+
+    .content {
+        font-family: Open Sans;
+        font-size: 13px;
+        font-weight: 300;
+        color: $gray-primary; 
+    }
+}

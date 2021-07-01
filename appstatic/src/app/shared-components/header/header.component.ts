@@ -29,6 +29,32 @@ export class HeaderComponent implements OnInit {
     this.navigationService.routeTo('home');
   }
 
+  navigateToManagement(): void {
+    this.navigationService.routeTo('management');
+  }
+
+  navigateToHistory(): void {
+
+  }
+  navigateToGoals(): void {
+
+  }
+  navigateToInitiatives(): void {
+
+  }
+  navigateToTestimonials(): void {
+
+  }
+  navigateToAssociates(): void {
+
+  }
+  navigateToProjects(): void {
+
+  }
+  navigateToContact(): void {
+    
+  }
+
   isActive(url: string): string {
     console.log(this.navigationService.currentUrl);
     return (this.isActiveUrl(url)) ? 'active' : ''; 

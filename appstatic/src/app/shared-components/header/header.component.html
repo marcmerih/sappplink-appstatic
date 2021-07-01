@@ -4,23 +4,23 @@
     <nav (scroll)="onScroll()">
         <ul class="unordered-list">
             <li [class]="isActive('/home')"><a (click)="navigateToHome()">Home</a></li>
-            <li><a (click)="navigateToCorporate()">Corporate</a>
+            <li><a style="cursor: default;">Corporate</a>
                 <ul>
                     <li [class]="isActive('/about')"><a (click)="navigateToCorporate()">About Us</a></li>
-                    <li><a>Management</a></li>
-                    <li><a>History</a></li>
-                    <li><a>Org. Goals</a></li>
-                    <li><a>Initiatives</a></li>
+                    <li [class]="isActive('/management')"><a (click)="navigateToManagement()">Management</a></li>
+                    <li [class]="isActive('/history')"><a (click)="navigateToHistory()">History</a></li>
+                    <li [class]="isActive('/organizational-goals')"><a (click)="navigateToGoals()">Org. Goals</a></li>
+                    <li [class]="isActive('/initiatives')"><a (click)="navigateToInitiatives()">Initiatives</a></li>
                 </ul>
             </li>
             <li><a>References</a>
                 <ul>
-                    <li><a>Testimonials</a></li>
-                    <li><a>Associates</a></li>
-                    <li><a>Projects</a></li>
+                    <li [class]="isActive('/testimonials')"><a (click)="navigateToTestimonials()">Testimonials</a></li>
+                    <li [class]="isActive('/associates')"><a (click)="navigateToAssociates()">Associates</a></li>
+                    <li [class]="isActive('/projects')"><a (click)="navigateToProjects()">Projects</a></li>
                 </ul>
             </li>
-            <li><a>Contact</a></li>
+            <li [class]="isActive('/contact')"><a (click)="navigateToContact()">Contact</a></li>
         </ul>
     </nav>
 </div>

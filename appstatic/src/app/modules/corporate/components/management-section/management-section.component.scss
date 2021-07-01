@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    min-width: 830px;
+
+    > app-management-card {
+        justify-content: center;
+        padding: 45px;
+    }
+}
