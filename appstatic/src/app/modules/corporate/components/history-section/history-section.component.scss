@@ -1,0 +1,22 @@
+@import '../../../../../styles.scss';
+
+.container {
+    width: 1100px;
+    justify-content: center;
+    text-align: justify;
+
+    .text {
+        margin-top: 60px;
+        margin-bottom: 90px;
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 18px;
+
+        .title {
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 25px;
+            color: $gray-primary;
+        }
+    }
+}

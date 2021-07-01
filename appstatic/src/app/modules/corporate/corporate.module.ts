@@ -7,6 +7,9 @@ import { ManagementPageComponent } from './management-page/management-page.compo
 import { ManagementSectionComponent } from './components/management-section/management-section.component';
 import { ManagementCardComponent } from './components/management-card/management-card.component';
 import { HistoryPageComponent } from './history-page/history-page.component';
+import { GoalsPageComponent } from './goals-page/goals-page.component';
+import { InitiativesPageComponent } from './initiatives-page/initiatives-page.component';
+import { HistorySectionComponent } from './components/history-section/history-section.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { HistoryPageComponent } from './history-page/history-page.component';
     ManagementPageComponent,
     ManagementSectionComponent,
     ManagementCardComponent,
-    HistoryPageComponent
+    HistoryPageComponent,
+    GoalsPageComponent,
+    InitiativesPageComponent,
+    HistorySectionComponent
   ],
   imports: [
     CommonModule,

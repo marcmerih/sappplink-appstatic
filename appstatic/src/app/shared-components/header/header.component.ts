@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
     this.navigationService.routeTo('history');
   }
   navigateToGoals(): void {
-
+    this.navigationService.routeTo('organizational-goals');
   }
   navigateToInitiatives(): void {
 
@@ -56,7 +56,6 @@ export class HeaderComponent implements OnInit {
   }
 
   isActive(url: string): string {
-    console.log(this.navigationService.currentUrl);
     return (this.isActiveUrl(url)) ? 'active' : ''; 
   }
 

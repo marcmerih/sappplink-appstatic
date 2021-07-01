@@ -37,7 +37,6 @@ export class NewsComponent implements OnInit {
   }
 
   openItem($event: NewsItem) {
-    console.log($event);
     // this.router.navigateByUrl(`/news/${$event.uid}/${$event.title}`, { state: { $event } });
   }
 

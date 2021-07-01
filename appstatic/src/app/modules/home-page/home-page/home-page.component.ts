@@ -17,7 +17,6 @@ export class HomePageComponent implements OnInit {
 
   private async getUrl(snap: firebase.storage.UploadTaskSnapshot) {
     const url = await snap.ref.getDownloadURL();
-    console.log(url);
   }
 
 }
