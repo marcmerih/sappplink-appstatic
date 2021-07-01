@@ -3,24 +3,24 @@
     <span class="title">Sapplink</span>
     <nav (scroll)="onScroll()">
         <ul class="unordered-list">
-            <li [class]="isActive('/home')"><a (click)="navigateToHome()">Home</a></li>
+            <li [class]="isActive(HOME)"><a (click)="navigateTo(HOME)">Home</a></li>
             <li><a style="cursor: default;">Corporate</a>
                 <ul>
-                    <li [class]="isActive('/about')"><a (click)="navigateToCorporate()">About Us</a></li>
-                    <li [class]="isActive('/management')"><a (click)="navigateToManagement()">Management</a></li>
-                    <li [class]="isActive('/history')"><a (click)="navigateToHistory()">History</a></li>
-                    <li [class]="isActive('/organizational-goals')"><a (click)="navigateToGoals()">Org. Goals</a></li>
-                    <li [class]="isActive('/initiatives')"><a (click)="navigateToInitiatives()">Initiatives</a></li>
+                    <li [class]="isActive(ABOUT)"><a (click)="navigateTo(ABOUT)">About Us</a></li>
+                    <li [class]="isActive(MANAGEMENT)"><a (click)="navigateTo(MANAGEMENT)">Management</a></li>
+                    <li [class]="isActive(HISTORY)"><a (click)="navigateTo(HISTORY)">History</a></li>
+                    <li [class]="isActive(GOALS)"><a (click)="navigateTo(GOALS)">Org. Goals</a></li>
+                    <li [class]="isActive(INITIATIVES)"><a (click)="navigateTo(INITIATIVES)">Initiatives</a></li>
                 </ul>
             </li>
             <li><a style="cursor: default;">References</a>
                 <ul>
-                    <li [class]="isActive('/testimonials')"><a (click)="navigateToTestimonials()">Testimonials</a></li>
-                    <li [class]="isActive('/associates')"><a (click)="navigateToAssociates()">Associates</a></li>
-                    <li [class]="isActive('/projects')"><a (click)="navigateToProjects()">Projects</a></li>
+                    <li [class]="isActive(TESTIMONIALS)"><a (click)="navigateTo(TESTIMONIALS)">Testimonials</a></li>
+                    <li [class]="isActive(ASSOCIATES)"><a (click)="navigateTo(ASSOCIATES)">Associates</a></li>
+                    <li [class]="isActive(PROJECTS)"><a (click)="navigateTo(PROJECTS)">Projects</a></li>
                 </ul>
             </li>
-            <li [class]="isActive('/contact')"><a (click)="navigateToContact()">Contact</a></li>
+            <li [class]="isActive(CONTACT)"><a (click)="navigateTo(CONTACT)">Contact</a></li>
         </ul>
     </nav>
 </div>

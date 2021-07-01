@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NavigationService } from 'src/app/services/navigation.service';
+import * as AppConstants from '../../app.constants';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,17 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class HeaderComponent implements OnInit {
   navBarFixed = false;
+  public HOME = AppConstants.Routes.HOME;
+  public ABOUT = AppConstants.Routes.ABOUT;
+  public MANAGEMENT = AppConstants.Routes.MANAGEMENT;
+  public HISTORY = AppConstants.Routes.HISTORY;
+  public GOALS = AppConstants.Routes.GOALS;
+  public INITIATIVES = AppConstants.Routes.INITIATIVES;
+  public TESTIMONIALS = AppConstants.Routes.TESTIMONIALS;
+  public ASSOCIATES = AppConstants.Routes.ASSOCIATES;
+  public PROJECTS = AppConstants.Routes.PROJECTS;
+  public CONTACT = AppConstants.Routes.CONTACT;
+
   @HostListener('window:scroll', ['$event']) onScroll() {
     if (window.scrollY > 80) {
       this.navBarFixed = true;
@@ -21,38 +33,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToCorporate(): void {
-    this.navigationService.routeTo('about');
-  }
-
-  navigateToHome(): void {
-    this.navigationService.routeTo('home');
-  }
-
-  navigateToManagement(): void {
-    this.navigationService.routeTo('management');
-  }
-
-  navigateToHistory(): void {
-    this.navigationService.routeTo('history');
-  }
-  navigateToGoals(): void {
-    this.navigationService.routeTo('organizational-goals');
-  }
-  navigateToInitiatives(): void {
-
-  }
-  navigateToTestimonials(): void {
-
-  }
-  navigateToAssociates(): void {
-
-  }
-  navigateToProjects(): void {
-
-  }
-  navigateToContact(): void {
-
+  navigateTo(url: string) {
+    this.navigationService.routeTo(url);
   }
 
   isActive(url: string): string {
@@ -60,11 +42,11 @@ export class HeaderComponent implements OnInit {
   }
 
   isActiveUrl(url: string): boolean {
-    return this.navigationService.currentUrl === url;
+    return this.navigationService.currentUrl === ('/' + url);
   }
 
   get isCorporateActive() {
-    return (this.isActiveUrl('/about') || this.isActiveUrl('/management') || this.isActiveUrl('/history') ||
-      this.isActiveUrl('/goals') || this.isActiveUrl('/initiatives'));
+    return (this.isActiveUrl(this.ABOUT) || this.isActiveUrl(this.MANAGEMENT) || this.isActiveUrl(this.HISTORY) ||
+      this.isActiveUrl(this.GOALS) || this.isActiveUrl(this.INITIATIVES));
   }
 }
