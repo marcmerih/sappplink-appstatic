@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateToHistory(): void {
-
+    this.navigationService.routeTo('history');
   }
   navigateToGoals(): void {
 
@@ -52,7 +52,7 @@ export class HeaderComponent implements OnInit {
 
   }
   navigateToContact(): void {
-    
+
   }
 
   isActive(url: string): string {

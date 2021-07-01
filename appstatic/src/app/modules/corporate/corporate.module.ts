@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ManagementPageComponent } from './management-page/management-page.component';
 import { ManagementSectionComponent } from './components/management-section/management-section.component';
 import { ManagementCardComponent } from './components/management-card/management-card.component';
+import { HistoryPageComponent } from './history-page/history-page.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ManagementCardComponent } from './components/management-card/management
     AboutSectionComponent,
     ManagementPageComponent,
     ManagementSectionComponent,
-    ManagementCardComponent
+    ManagementCardComponent,
+    HistoryPageComponent
   ],
   imports: [
     CommonModule,
