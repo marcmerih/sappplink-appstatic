@@ -1,1 +1,15 @@
-<p>initiatives-page works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <div class="background-image">
+            <span class="main-title">Our initiatives for Mother Earth.</span>
+            <img src="assets/initiatives-bg-1@2x.png" width="100%">
+        </div>
+
+        <div *ngFor="let item of initiatives">
+            <app-news-item [item]="item"
+            ></app-news-item>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>

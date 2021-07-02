@@ -8,4 +8,7 @@ export interface NewsItem {
     numberOfViews?: number;
     content?: string;
     author?: string;
+    isInitiative?: boolean;
+    initiativeNumber?: number;
+    initiativeSubtitle?: string;
 }

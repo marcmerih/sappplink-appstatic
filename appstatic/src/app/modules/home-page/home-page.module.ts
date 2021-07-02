@@ -29,7 +29,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   exports: [
     HomePageComponent,
     HomeAnalyticsComponent,
-    HeaderComponent
+    HeaderComponent,
+    NewsComponent,
+    NewsItemComponent
   ]
 })
 export class HomePageModule { }

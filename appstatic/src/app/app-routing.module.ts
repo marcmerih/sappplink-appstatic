@@ -5,13 +5,15 @@ import { AboutPageComponent } from './modules/corporate/about-page/about-page.co
 import { ManagementPageComponent } from './modules/corporate/management-page/management-page.component';
 import { HistoryPageComponent } from './modules/corporate/history-page/history-page.component';
 import { GoalsPageComponent } from './modules/corporate/goals-page/goals-page.component';
+import { InitiativesPageComponent } from './modules/corporate/initiatives-page/initiatives-page.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'management', component: ManagementPageComponent },
   { path: 'history', component: HistoryPageComponent },
-  { path: 'organizational-goals', component: GoalsPageComponent }
+  { path: 'organizational-goals', component: GoalsPageComponent },
+  { path: 'initiatives', component: InitiativesPageComponent },
 ];
 
 @NgModule({

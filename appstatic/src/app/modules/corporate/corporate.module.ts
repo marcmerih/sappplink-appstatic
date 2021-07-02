@@ -10,6 +10,10 @@ import { HistoryPageComponent } from './history-page/history-page.component';
 import { GoalsPageComponent } from './goals-page/goals-page.component';
 import { InitiativesPageComponent } from './initiatives-page/initiatives-page.component';
 import { HistorySectionComponent } from './components/history-section/history-section.component';
+import { GoalsSectionComponent } from './components/goals-section/goals-section.component';
+import { NewsComponent } from '../home-page/components/news/news.component';
+import { NewsItemComponent } from '../home-page/components/news-item/news-item.component';
+import { HomePageModule } from '../home-page/home-page.module';
 
 @NgModule({
   declarations: [
@@ -21,12 +25,14 @@ import { HistorySectionComponent } from './components/history-section/history-se
     HistoryPageComponent,
     GoalsPageComponent,
     InitiativesPageComponent,
-    HistorySectionComponent
+    HistorySectionComponent,
+    GoalsSectionComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HomePageModule
   ],
   exports: []
 })
