@@ -15,6 +15,10 @@ export class NewsItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  get isInitiative() {
+    return this.item?.isInitiative;
+  }
+
   get itemBackground() {
     return this.item?.backgroundImg;
   }
@@ -26,6 +30,14 @@ export class NewsItemComponent implements OnInit {
       return this.item?.title;
     }
     return '';
+  }
+
+  get itemSubtitle() {
+    return this.item?.initiativeSubtitle;
+  }
+
+  get itemInitiativeNumber() {
+    return this.item?.initiativeNumber;
   }
 
   get itemViews() {

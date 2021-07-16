@@ -1,10 +1,14 @@
 <div class="col-md-12 container" (click)="openItem.emit(item)">
     <span class="title">{{ itemTitle }}</span>
-    <span class="material-icons article" *ngIf="itemNews">&#xEf42;</span>
-    <span class="material-icons article" *ngIf="!itemNews">&#xe8cd;</span>
-    <span class="material-icons views">&#xe8f4;</span>
-    <span class="numberOfViews">{{ itemViews }}</span>
-    <span class="date">{{ itemDate }}</span>
+    <span class="material-icons article" *ngIf="itemNews && !isInitiative">&#xEf42;</span>
+    <span class="material-icons article" *ngIf="!itemNews && !isInitiative">&#xe8cd;</span>
+    <span class="material-icons views" *ngIf="!isInitiative">&#xe8f4;</span>
+    <span class="numberOfViews" *ngIf="!isInitiative">{{ itemViews }}</span>
+    <span class="date" *ngIf="!isInitiative">{{ itemDate }}</span>
+    <span class="article" *ngIf="isInitiative">{{ itemSubtitle }}</span>
+    <span class="numberOfViews" *ngIf="isInitiative">{{ itemInitiativeNumber }}</span>
+    <button class="initiativeButton" *ngIf="isInitiative">Donate</button>
+    <span class="date" *ngIf="!isInitiative">{{ itemDate }}</span>
     <div class="gradient"></div>
     <img [src]="itemBackground">
 </div>

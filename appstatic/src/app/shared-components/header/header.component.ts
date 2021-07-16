@@ -12,13 +12,13 @@ export class HeaderComponent implements OnInit {
   public HOME = AppConstants.Routes.HOME;
   public ABOUT = AppConstants.Routes.ABOUT;
   public MANAGEMENT = AppConstants.Routes.MANAGEMENT;
-  public HISTORY = AppConstants.Routes.HISTORY;
   public GOALS = AppConstants.Routes.GOALS;
   public INITIATIVES = AppConstants.Routes.INITIATIVES;
+  public YACHTING = AppConstants.Routes.YACHTING;
   public TESTIMONIALS = AppConstants.Routes.TESTIMONIALS;
   public ASSOCIATES = AppConstants.Routes.ASSOCIATES;
   public PROJECTS = AppConstants.Routes.PROJECTS;
-  public CONTACT = AppConstants.Routes.CONTACT;
+  public CONTACT = AppConstants.Routes.CONTACT
 
   @HostListener('window:scroll', ['$event']) onScroll() {
     if (window.scrollY > 80) {
@@ -46,7 +46,7 @@ export class HeaderComponent implements OnInit {
   }
 
   get isCorporateActive() {
-    return (this.isActiveUrl(this.ABOUT) || this.isActiveUrl(this.MANAGEMENT) || this.isActiveUrl(this.HISTORY) ||
+    return (this.isActiveUrl(this.ABOUT) || this.isActiveUrl(this.MANAGEMENT) ||
       this.isActiveUrl(this.GOALS) || this.isActiveUrl(this.INITIATIVES));
   }
 }

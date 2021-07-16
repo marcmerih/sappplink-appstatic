@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationService } from 'src/app/services/navigation.service';
 import { TranslateService } from 'src/app/services/translate.service';
 import * as AppConstants from '../../app.constants';
+import { MatDialog } from '@angular/material/dialog';
+import { LanguagePopupComponent } from '../language-popup/language-popup.component';
 
 @Component({
   selector: 'app-footer',
@@ -17,14 +19,16 @@ export class FooterComponent implements OnInit {
   public HOME = AppConstants.Routes.HOME;
   public ABOUT = AppConstants.Routes.ABOUT;
   public MANAGEMENT = AppConstants.Routes.MANAGEMENT;
-  public HISTORY = AppConstants.Routes.HISTORY;
   public GOALS = AppConstants.Routes.GOALS;
   public INITIATIVES = AppConstants.Routes.INITIATIVES;
+  public YACHTING = AppConstants.Routes.YACHTING;
   public TESTIMONIALS = AppConstants.Routes.TESTIMONIALS;
   public ASSOCIATES = AppConstants.Routes.ASSOCIATES;
   public PROJECTS = AppConstants.Routes.PROJECTS;
   public CONTACT = AppConstants.Routes.CONTACT;
-  constructor(private navigationService: NavigationService, private translateService: TranslateService) {
+  constructor(private navigationService: NavigationService, 
+    private translateService: TranslateService,
+    private dialog: MatDialog) {
     this.en = translateService.en;
     this.tr = translateService.tr;
     this.fr = translateService.fr;
@@ -39,7 +43,10 @@ export class FooterComponent implements OnInit {
   }
 
   changeLanguage(language: string) {
-    return language;
+    const data = {
+      lang: language
+    };
+    this.dialog.open(LanguagePopupComponent);
   }
 
 }

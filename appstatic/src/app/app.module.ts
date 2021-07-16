@@ -12,11 +12,14 @@ import { FooterComponent } from './shared-components/footer/footer.component';
 import { HomePageModule } from './modules/home-page/home-page.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CorporateModule } from './modules/corporate/corporate.module';
+import { MatDialogModule } from '@angular/material/dialog';
+import { LanguagePopupComponent } from './shared-components/language-popup/language-popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
+    LanguagePopupComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { CorporateModule } from './modules/corporate/corporate.module';
     HomePageModule,
     ReactiveFormsModule,
     FormsModule,
-    CorporateModule
+    CorporateModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

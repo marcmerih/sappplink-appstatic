@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HistorySectionComponent } from './history-section.component';
+import { LanguagePopupComponent } from './language-popup.component';
 
-describe('HistorySectionComponent', () => {
-  let component: HistorySectionComponent;
-  let fixture: ComponentFixture<HistorySectionComponent>;
+describe('LanguagePopupComponent', () => {
+  let component: LanguagePopupComponent;
+  let fixture: ComponentFixture<LanguagePopupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HistorySectionComponent ]
+      declarations: [ LanguagePopupComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HistorySectionComponent);
+    fixture = TestBed.createComponent(LanguagePopupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
